@@ -1,3 +1,31 @@
+.nav-link {
+  color: #fff;
+}
+.bg-blue {
+  background-color: #060e24;
+}
 .carousel-item {
-    height: 400px;
+  height: 400px;
+}
+.logo-zentel {
+  width: auto;
+  height: 40px;
+}
+.libro-reclamaciones {
+  width: auto;
+  height: 85px;
+}
+.subrayado {
+  border-bottom: 2px solid #fff;
+  display: inline-block;
+  padding-bottom: 4px;
+}
+.fa-facebook:hover {
+  color: #3b5998;
+}
+.fa-instagram:hover {
+  color: #e1306c;
+}
+.fa-twitter:hover {
+  color: #1da1f2;
 }
