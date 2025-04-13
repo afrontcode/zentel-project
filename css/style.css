@@ -1,0 +1,126 @@
+.nav-link {
+  color: #fff;
+}
+
+.bg-blue {
+  background-color: #060e24;
+}
+
+.carousel-item img {
+  height: auto;
+  max-height: 460px;
+  object-fit: cover;
+  transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+.carousel-item.active img {
+  transform: scale(1);
+  opacity: 1;
+}
+
+@media (min-width: 992px) { /* lg breakpoint */
+  .rounded-lg-5 {
+    border-radius: 1.8rem; /* igual que rounded-5 */
+  }
+}
+@media (max-width: 767.98px) { /* mb = mobile */
+  .rounded-mb-4 {
+    border-radius: 1rem; /* igual que rounded-4 */
+  }
+}
+
+.logo-zentel {
+  width: auto;
+  height: 40px;
+}
+.libro-reclamaciones {
+  width: auto;
+  height: 85px;
+}
+.subrayado {
+  border-bottom: 2px solid #fff;
+  display: inline-block;
+  padding-bottom: 4px;
+}
+.fa-facebook:hover {
+  color: #3b5998;
+}
+.fa-instagram:hover {
+  color: #e1306c;
+}
+.fa-twitter:hover {
+  color: #1da1f2;
+}
+
+.card {
+  border-radius: 12px;
+  transition: transform 0.2s ease-in-out;
+}
+.card:hover {
+  transform: scale(1.01);
+}
+
+.capacity-badge {
+  background-color: #f0f0f0 !important;
+  color: #91979e !important;
+  cursor: pointer;
+}
+
+.capacity-badge:hover {
+  background-color: #212529 !important;
+  color: #fff !important;
+  cursor: pointer;
+}
+
+strike {
+  text-decoration: line-through;
+}
+
+.precio-responsive {
+  font-size: 1.1rem;
+}
+
+@media (min-width: 576px) {
+  .precio-responsive {
+    font-size: 1.3rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .precio-responsive {
+    font-size: 1.5rem;
+  }
+}
+
+.rounded-circle {
+    width: 15px;
+    height: 15px;
+}
+
+.btn-outline-secondary:hover,
+.btn-outline-secondary:focus {
+  background-color: transparent !important;
+  color: inherit !important;
+  border-color: var(--bs-secondary) !important;
+  box-shadow: none !important;
+}
+
+.dropdown-menu {
+  border-radius: 10px;
+  padding: 0.5rem 0;
+}
+.dropdown-item:hover {
+  background-color: #c9cccf;
+}
+
+.border-none {
+  border: none !important;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !important;
+}
+.navbar-toggler:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
