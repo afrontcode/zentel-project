@@ -1,0 +1,107 @@
+<div class="offcanvas-header">
+  <h5 class="offcanvas-title">Filtros</h5>
+  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Cerrar"></button>
+</div>
+<div class="offcanvas-body">
+
+  <div class="accordion" id="accordionFiltrosMobile">
+
+    <!-- Marca -->
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingMarcaMobile">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+          data-bs-target="#collapseMarcaMobile" aria-expanded="false" aria-controls="collapseMarcaMobile">
+          Marca
+        </button>
+      </h2>
+      <div id="collapseMarcaMobile" class="accordion-collapse collapse" aria-labelledby="headingMarcaMobile"
+        data-bs-parent="#accordionFiltrosMobile">
+        <div class="accordion-body">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="marcaAppleMobile">
+            <label class="form-check-label" for="marcaAppleMobile">Apple</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="marcaSamsungMobile">
+            <label class="form-check-label" for="marcaSamsungMobile">Samsung</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="marcaHonorMobile">
+            <label class="form-check-label" for="marcaHonorMobile">Honor</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="marcaXiaomiMobile">
+            <label class="form-check-label" for="marcaXiaomiMobile">Xiaomi</label>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Cámara Principal -->
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingCamaraMobile">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+          data-bs-target="#collapseCamaraMobile" aria-expanded="false" aria-controls="collapseCamaraMobile">
+          Cámara Principal
+        </button>
+      </h2>
+      <div id="collapseCamaraMobile" class="accordion-collapse collapse" aria-labelledby="headingCamaraMobile"
+        data-bs-parent="#accordionFiltrosMobile">
+        <div class="accordion-body">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="camara1">
+            <label class="form-check-label" for="camara1">Hasta 20MP</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="camara2">
+            <label class="form-check-label" for="camara2">21MP a 50MP</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="camara3">
+            <label class="form-check-label" for="camara3">51MP a 90MP</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="camara4">
+            <label class="form-check-label" for="camara4">Más de 100MP</label>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Capacidad -->
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingCapacidadMobile">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+          data-bs-target="#collapseCapacidadMobile" aria-expanded="false" aria-controls="collapseCapacidadMobile">
+          Capacidad
+        </button>
+      </h2>
+      <div id="collapseCapacidadMobile" class="accordion-collapse collapse" aria-labelledby="headingCapacidadMobile"
+        data-bs-parent="#accordionFiltrosMobile">
+        <div class="accordion-body">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="capacidad1">
+            <label class="form-check-label" for="capacidad1">64 GB</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="capacidad2">
+            <label class="form-check-label" for="capacidad2">128 GB</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="capacidad3">
+            <label class="form-check-label" for="capacidad3">256 GB</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="capacidad4">
+            <label class="form-check-label" for="capacidad4">512 GB</label>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Botón de aplicar -->
+  <button class="btn btn-danger w-100 mt-4">Aplicar Filtro</button>
+
+</div>

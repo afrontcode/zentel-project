@@ -6,33 +6,31 @@
   background-color: #060e24;
 }
 
-.carousel-item img {
-  height: auto;
-  max-height: 460px;
-  object-fit: cover;
-  transition: transform 0.4s ease, opacity 0.4s ease;
+.btn-blue {
+  background-color: #060e24;
 }
 
-.carousel-item.active img {
-  transform: scale(1);
-  opacity: 1;
-}
-
-@media (min-width: 992px) { /* lg breakpoint */
+@media (min-width: 992px) {
+  /* lg breakpoint */
   .rounded-lg-5 {
-    border-radius: 1.8rem; /* igual que rounded-5 */
+    border-radius: 2rem; /* igual que rounded-5 */
+  }
+  .logo-icon {
+    width: auto;
+    height: 55px;
   }
 }
-@media (max-width: 767.98px) { /* mb = mobile */
+@media (max-width: 767.98px) {
+  /* mb = mobile */
   .rounded-mb-4 {
     border-radius: 1rem; /* igual que rounded-4 */
   }
+  .logo-icon {
+    width: auto;
+    height: 35px;
+  }
 }
 
-.logo-zentel {
-  width: auto;
-  height: 40px;
-}
 .libro-reclamaciones {
   width: auto;
   height: 85px;
@@ -93,8 +91,8 @@ strike {
 }
 
 .rounded-circle {
-    width: 15px;
-    height: 15px;
+  width: 15px;
+  height: 15px;
 }
 
 .btn-outline-secondary:hover,
@@ -113,14 +111,21 @@ strike {
   background-color: #c9cccf;
 }
 
-.border-none {
-  border: none !important;
-}
-
 .navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !important;
 }
 .navbar-toggler:focus {
   outline: none !important;
   box-shadow: none !important;
+}
+
+.modal.fade .modal-dialog {
+  transform: scale(0.8);
+  opacity: 0;
+  transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+}
+
+.modal.fade.show .modal-dialog {
+  transform: scale(1);
+  opacity: 1;
 }

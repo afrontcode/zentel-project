@@ -1,27 +1,78 @@
 <nav class="navbar navbar-expand-sm bg-blue border-bottom border-body" data-bs-theme="dark">
-    <div class="container-fluid px-lg-5">
-        <a class="navbar-brand" href="../index.html">
-            <img src="../img/logo/zentel-logo.svg" class="logo-zentel" alt="logo-zentel">
-        </a>
-        <button class="navbar-toggler border-none" type="button" data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-            aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+  <div class="container-fluid px-lg-5">
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <!-- Menú hamburguesa + Logo (siempre a la izquierda) -->
+    <div class="d-flex align-items-center gap-2">
+      <!-- Botón hamburguesa solo visible en sm -->
+      <button class="navbar-toggler border-0 p-0 d-sm-none" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="../pages/celulares.html">Celulares</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="../pages/ofertas.html">Ofertas</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="../pages/accesorios.html">Accesorios</a>
-                </li>
-            </ul>
-        </div>
+      <!-- Logo -->
+      <a class="navbar-brand m-0" href="../index.html">
+        <img src="../img/logo/zentel-logo.svg" class="logo-icon" alt="logo-zentel">
+      </a>
     </div>
+
+    <!-- Íconos flotantes en MOBILE -->
+    <div class="d-flex d-sm-none align-items-center gap-2 ms-auto">
+      <!-- Buscar -->
+      <a href="#" class="nav-link text-white p-0">
+        <i class="fa-solid fa-magnifying-glass fs-5"></i>
+      </a>
+
+      <!-- Carrito -->
+      <a class="nav-link text-white position-relative ps-2" href="../pages/accesorios.html">
+        <i class="fa-solid fa-cart-shopping fs-5"></i>
+        <span class="position-absolute top-0 start-100 py-1 px-1 translate-middle badge rounded-pill bg-danger">
+          2<span class="visually-hidden">items</span>
+        </span>
+      </a>
+
+      <!-- Usuario -->
+      <a class="nav-link text-white ps-3 pe-2" href="../pages/accesorios.html">
+        <i class="fa-solid fa-user fs-5"></i>
+      </a>
+    </div>
+
+    <!-- Menú colapsable -->
+    <div class="collapse navbar-collapse mt-2 mt-sm-0" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto align-items-sm-center gap-sm-3">
+        <!-- Enlaces principales -->
+        <li class="nav-item">
+          <a class="nav-link" href="../pages/celulares.html">Celulares</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../pages/ofertas.html">Ofertas</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../pages/accesorios.html">Accesorios</a>
+        </li>
+
+        <!-- Íconos visibles solo en desktop -->
+        <li class="nav-item d-none d-sm-block">
+          <a href="#" class="nav-link text-white px-2">
+            <i class="fa-solid fa-magnifying-glass fs-5"></i>
+          </a>
+        </li>
+
+        <li class="nav-item d-none d-sm-block position-relative">
+          <a class="nav-link text-white p-0 position-relative" href="../pages/accesorios.html">
+            <i class="fa-solid fa-cart-shopping fs-5"></i>
+            <span class="position-absolute top-0 start-100 px-1 translate-middle badge rounded-pill bg-danger">
+              9+<span class="visually-hidden">items</span>
+            </span>
+          </a>
+        </li>
+
+        <li class="nav-item d-none d-sm-block">
+          <a class="nav-link text-white rounded-pill bg-outline px-3 " href="../pages/accesorios.html">
+            <i class="fa-solid fa-user fs-5"></i> Mi cuenta
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
 </nav>

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Celulares</title>
+  <!--CDN Bootstrap CSS-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <!--CSS EXTERNO-->
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/colors.css">
+
+  <!--CDN Font Awesome-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.7.2/css/all.css" crossorigin="anonymous">
+
+  <!--Icon Web-->
+  <link rel="icon" href="../img/logo/zentel-icon.svg" type="image/svg">
+
+</head>
+
+<body>
+
+  <!--Cabecera-->
+  <header>
+    <div id="navbar-container"></div>
+  </header>
+
+  <!-- Banners -->
+  <div id="banner-container"></div>
+
+  <!-- Pantalla de Libro de Reclamaciones -->
+  <div class="container py-5">
+    <h2 class="fw-bold text-center mb-2">&#191;Tuviste un inconveniente con nosotros?</h2>
+    <p class="text-center mb-4">Selecciona el tema asociado y reg&iacute;stralo.</p>
+
+    <div class="row g-4 justify-content-center">
+      <!-- Servicio -->
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm rounded-4" style="cursor: pointer;" data-bs-toggle="modal"
+          data-bs-target="#modalServicio" data-bs-title="Reclamo por Servicio">
+          <div class="card-body">
+            <div class="text-danger mb-2 fs-2">
+              <i class="fa-solid fa-wifi"></i>
+            </div>
+            <h5 class="fw-bold">Servicio</h5>
+            <p class="mb-1">Registra aqu&iacute; reclamos sobre:</p>
+            <ul>
+              <li>Retraso en la entrega del producto.</li>
+              <li>Dificultades para realizar la devolución o cambio.</li>
+              <li>Cobros adicionales o no informados.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Atencin al cliente -->
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm rounded-4" style="cursor: pointer;" data-bs-toggle="modal"
+          data-bs-target="#modalServicio" data-bs-title="Reclamo por atencion al cliente">
+          <div class="card-body">
+            <div class="text-danger mb-2 fs-2">
+              <i class="fa-solid fa-headset"></i>
+            </div>
+            <h5 class="fw-bold">Atenci&oacute;n</h5>
+            <p class="mb-0">Registra aquí cualquier inconveniente relacionado con tu compra, atención o entrega de
+              productos.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Producto -->
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm rounded-4" style="cursor: pointer;" data-bs-toggle="modal"
+          data-bs-target="#modalServicio" data-bs-title="Reclamo por producto">
+          <div class="card-body">
+            <div class="text-danger mb-2 fs-2">
+              <i class="fa-solid fa-box"></i>
+            </div>
+            <h5 class="fw-bold">Producto</h5>
+            <p class="mb-1">Registra aqu&iacute; inconvenientes sobre:</p>
+            <ul>
+              <li>Producto defectuoso o en mal estado.</li>
+              <li>Producto distinto al solicitado.</li>
+              <li>Producto incompleto.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <p class="mt-4 text-center small text-muted">
+      * Al presentar un reclamo, puede suspender temporalmente el procesamiento de tu pedido mientras se evalúa el caso.
+      <br>Por favor, revisa los términos antes de enviar tu solicitud.
+    </p>
+  </div>
+
+
+  <div class="modal fade" id="modalServicio" tabindex="-1" aria-labelledby="modalServicioLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content rounded-4">
+        <div class="modal-header bg-blue text-white rounded-top-4">
+          <h5 class="modal-title" id="modalServicioLabel">Reclamo</h5>
+          <button type="button" class="btn-close btn-close-white border-0 p-0 " data-bs-dismiss="modal"
+            aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="row g-3">
+              <div class="col-md-6">
+                <div class="form-floating">
+                  <select class="form-select" id="idDocumentoReclamo">
+                    <option selected disabled>Selecciona el tipo de documento</option>
+                    <option value="dni">DNI</option>
+                    <option value="ruc">RUC</option>
+                    <option value="pasaporte">Pasaporte</option>
+                    <option value="caret">Carnet de Extranjería</option>
+                  </select>
+                  <label for="idDocumentoReclamo">Tipo de documento</label>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="form-floating">
+                  <input type="text" class="form-control" id="numDocumentoReclamo" placeholder="Número de documento">
+                  <label for="numDocumentoReclamo">Número de documento</label>
+                </div>
+              </div>
+
+              <div class="col-mb-6">
+                <div class="form-floating">
+                  <input type="text" class="form-control" id="nombresReclamo" placeholder="Ingrese sus Nombres">
+                  <label for="nombresReclamo">Nombres</label>
+                </div>
+              </div>
+
+              <div class="col-mb-6">
+                <div class="form-floating">
+                  <input type="text" class="form-control" id="apellidosReclamo" placeholder="Ingrese sus Apllidos">
+                  <label for="apellidosReclamo">Apellidos</label>
+                </div>
+              </div>
+
+              <div class="col-12">
+                <div class="form-floating">
+                  <input type="email" class="form-control" id="correoReclamo" placeholder="email@zentel.com">
+                  <label for="correoReclamo">Correo electrónico</label>
+                </div>
+              </div>
+
+              <div class="col-12">
+                <div class="form-floating">
+                  <textarea class="form-control" placeholder="Leave a comment here" id="comentariosReclamo"
+                    maxlength="200" style="height: 100px"></textarea>
+                  <label for="comentariosReclamo">Commentarios</label>
+                </div>
+              </div>
+
+              <div class="col-12 text-end">
+                <button type="submit" class="btn btn-danger">Enviar reclamo</button>
+              </div>
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Footer -->
+  <div id="footer-container"></div>
+
+  <!--CDN Bootstrap JS-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+
+  <script src="../js/ui/navbar-footer-load.js"></script>
+  <script src="../js/main.js"></script>
+</body>
+
+</html>
