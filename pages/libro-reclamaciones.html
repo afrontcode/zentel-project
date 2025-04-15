@@ -112,8 +112,8 @@
             <div class="row g-3">
               <div class="col-md-6">
                 <div class="form-floating">
-                  <select class="form-select" id="idDocumentoReclamo">
-                    <option selected disabled>Selecciona el tipo de documento</option>
+                  <select class="form-select" id="idDocumentoReclamo" required>
+                    <option value="" selected disabled>Selecciona el tipo de documento</option>
                     <option value="dni">DNI</option>
                     <option value="ruc">RUC</option>
                     <option value="pasaporte">Pasaporte</option>
@@ -125,28 +125,28 @@
 
               <div class="col-md-6">
                 <div class="form-floating">
-                  <input type="text" class="form-control" id="numDocumentoReclamo" placeholder="Número de documento">
+                  <input type="text" class="form-control" id="numDocumentoReclamo" placeholder="Número de documento" required>
                   <label for="numDocumentoReclamo">Número de documento</label>
                 </div>
               </div>
 
               <div class="col-mb-6">
                 <div class="form-floating">
-                  <input type="text" class="form-control" id="nombresReclamo" placeholder="Ingrese sus Nombres">
+                  <input type="text" class="form-control" id="nombresReclamo" placeholder="Ingrese sus Nombres" required>
                   <label for="nombresReclamo">Nombres</label>
                 </div>
               </div>
 
               <div class="col-mb-6">
                 <div class="form-floating">
-                  <input type="text" class="form-control" id="apellidosReclamo" placeholder="Ingrese sus Apllidos">
+                  <input type="text" class="form-control" id="apellidosReclamo" placeholder="Ingrese sus Apllidos" required>
                   <label for="apellidosReclamo">Apellidos</label>
                 </div>
               </div>
 
               <div class="col-12">
                 <div class="form-floating">
-                  <input type="email" class="form-control" id="correoReclamo" placeholder="email@zentel.com">
+                  <input type="email" class="form-control" id="correoReclamo" placeholder="email@zentel.com" required>
                   <label for="correoReclamo">Correo electrónico</label>
                 </div>
               </div>
@@ -154,7 +154,7 @@
               <div class="col-12">
                 <div class="form-floating">
                   <textarea class="form-control" placeholder="Leave a comment here" id="comentariosReclamo"
-                    maxlength="200" style="height: 100px"></textarea>
+                    maxlength="200" style="height: 100px" required></textarea>
                   <label for="comentariosReclamo">Commentarios</label>
                 </div>
               </div>
